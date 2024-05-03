@@ -1,15 +1,14 @@
 -- wave 1
 local args = {
-            [1] = "Troops",
-            [2] = "Place",
-            [3] = "Farm",
-            [4] = {
-                ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-                ["Position"] = Vector3.new(17.85367774963379, 1.0368708372116089, -31.17180824279785)
-            }
-        }
+    [1] = "Troops",
+    [2] = "Place",
+    [3] = "Farm",
+    [4] = {
+        ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+        ["Position"] = Vector3.new(21.135257720947266, 0.9999679327011108, -32.14592742919922)
+    }
+}
 
-        game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
 -- wave 2
 local args = {
     [1] = "Streaming",
