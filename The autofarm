@@ -1,0 +1,5 @@
+while true do
+    local player = game.Players.LocalPlayer
+    local playerGui = player.PlayerGui.GameGui.Health
+    local waveText = playerGui.Wave.Text
+if waveText == "WAVE 0" then
