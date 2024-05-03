@@ -1,5 +1,8 @@
 while true do
-if waveText == "WAVE 1" then
+local player = game.Players.LocalPlayer
+    local playerGui = player.PlayerGui.GameGui.Health
+    local waveText = playerGui.Wave.Text
+   if waveText == "WAVE 1" then
 local args = {
     [1] = "Troops",
     [2] = "Place",
@@ -11,6 +14,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+
 local args = {
     [1] = "Streaming",
     [2] = "SelectTower",
@@ -19,14 +23,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-local args = {
-    [1] = "Streaming",
-    [2] = "SelectTower",
-    [3] = "Shotgunner",
-    [4] = "Default"
-}
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 local args = {
     [1] = "Troops",
     [2] = "Upgrade",
@@ -37,6 +34,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+
 local args = {
     [1] = "Troops",
     [2] = "Target",
@@ -48,5 +46,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+   end
 wait(1)
 end
