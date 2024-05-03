@@ -1,0 +1,31 @@
+local args = {
+            [1] = "Troops",
+            [2] = "Place",
+            [3] = "Shotgunner",
+            [4] = {
+                ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+                ["Position"] = Vector3.new(-1.134538173675537, 0.9999386072158813, -37.42399597167969)
+            }
+        }
+
+        game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+
+        local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Shotgunner",
+    [4] = "Default"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Troops",
+    [2] = "Upgrade",
+    [3] = "Set",
+    [4] = {
+        ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Default")
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
