@@ -1,35 +1,34 @@
-if waveText == "WAVE 1" then
-    local args = {
-        [1] = "Troops",
-        [2] = "Place",
-        [3] = "Shotgunner",
-        [4] = {
-            ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-            ["Position"] = Vector3.new(4.461425304412842, 1.0368708372116089, -30.489442825317383)
-        }
+    if waveText == "WAVE 1" then
+local args = {
+    [1] = "Troops",
+    [2] = "Place",
+    [3] = "Shotgunner",
+    [4] = {
+        ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+        ["Position"] = Vector3.new(4.461425304412842, 1.0368708372116089, -30.489442825317383)
     }
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Shotgunner",
+    [4] = "Default"
+}
 
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Shotgunner",
+    [4] = "Default"
+}
 
-
-    local selectTowerArgs1 = {
-        [1] = "Streaming",
-        [2] = "SelectTower",
-        [3] = "Shotgunner",
-        [4] = "Default"
-    }
-
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(selectTowerArgs1))
-
-    wait(1)
-
-    
-    local selectTowerArgs2 = {
-        [1] = "Streaming",
-        [2] = "SelectTower",
-        [3] = "Shotgunner",
-        [4] = "Default"
-    }
-
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(selectTowerArgs2))
-end
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Shotgunner",
+    [4] = "Default"
+}
