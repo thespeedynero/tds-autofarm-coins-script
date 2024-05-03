@@ -1,3 +1,4 @@
+while true do
 if waveText == "WAVE 1" then
 local args = {
     [1] = "Troops",
@@ -47,4 +48,5 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+wait(1)
 end
