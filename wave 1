@@ -47,4 +47,3 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
