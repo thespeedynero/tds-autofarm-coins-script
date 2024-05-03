@@ -8,7 +8,6 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
 local args = {
     [1] = "Streaming",
     [2] = "SelectTower",
