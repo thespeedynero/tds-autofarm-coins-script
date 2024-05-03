@@ -29,3 +29,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+
+local args = {
+     [1] = "Troops",
+     [2] = "Target",
+     [3] = "Set",
+     [4] = {
+         ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Default"),
+                ["Target"] = "Farthest"
+            }
+        }
+
+        game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
