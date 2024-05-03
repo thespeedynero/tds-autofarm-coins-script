@@ -3,3 +3,10 @@ while true do
     local playerGui = player.PlayerGui.GameGui.Health
     local waveText = playerGui.Wave.Text
 if waveText == "WAVE 0" then
+local args = {
+    [1] = "Voting",
+    [2] = "Skip"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+if waveText == "WAVE 1" then
