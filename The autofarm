@@ -12,10 +12,8 @@ while true do
         game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
     end
         loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/First%20Shotgunner%20wave1"))()
-
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/second%20shotgunner"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/second%20shotgunner"))()
     end
     
     wait(1)
