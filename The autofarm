@@ -16,4 +16,5 @@ if waveText == "WAVE 2" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
 if waveText == "WAVE 3" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/second%20shotgunner"))()
+end
 wait(1)
