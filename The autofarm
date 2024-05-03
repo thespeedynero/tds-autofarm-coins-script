@@ -2,19 +2,28 @@ while true do
     local player = game.Players.LocalPlayer
     local playerGui = player.PlayerGui.GameGui.Health
     local waveText = playerGui.Wave.Text
-if waveText == "WAVE 0" then
-local args = {
-    [1] = "Voting",
-    [2] = "Skip"
-}
+    
+    if waveText == "WAVE 0" then
+        local args = {
+            [1] = "Voting",
+            [2] = "Skip"
+        }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
-if waveText == "WAVE 1" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/0c7260d39076c15dbc1c97556563523d15a26bc5/wave%201"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
-if waveText == "WAVE 2" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
-if waveText == "WAVE 3" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/second%20shotgunner"))()
+        game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+    end
+    
+    if waveText == "WAVE 1" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/0c7260d39076c15dbc1c97556563523d15a26bc5/wave%201"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
+    end
+    
+    if waveText == "WAVE 2" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
+    end
+    
+    if waveText == "WAVE 3" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/second%20shotgunner"))()
+    end
+    
+    wait(1)
 end
-wait(1)
