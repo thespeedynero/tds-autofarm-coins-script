@@ -1,1 +1,6 @@
+local args = {
+    [1] = "Voting",
+    [2] = "Skip"
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
