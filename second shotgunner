@@ -4,7 +4,7 @@ local args = {
     [3] = "Shotgunner",
     [4] = {
         ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-        ["Position"] = Vector3.new(-1.1829700469970703, 0.9999381303787231, -37.32815933227539)
+        ["Position"] = Vector3.new(-1.3321104049682617, 0.9999366998672485, -37.142608642578125)
     }
 }
 
@@ -18,11 +18,19 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Shotgunner",
+    [4] = "Default"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+local args = {
     [1] = "Troops",
     [2] = "Upgrade",
     [3] = "Set",
     [4] = {
-        ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Holiday")
+        ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Default")
     }
 }
 
@@ -32,7 +40,7 @@ local args = {
     [2] = "Target",
     [3] = "Set",
     [4] = {
-        ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Holiday"),
+        ["Troop"] = workspace:WaitForChild("Towers"):WaitForChild("Default"),
         ["Target"] = "Farthest"
     }
 }
