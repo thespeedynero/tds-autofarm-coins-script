@@ -1,5 +1,5 @@
 while true do
-    if waveText == "WAVE 1" then
+if waveText == "WAVE 1" then
 local args = {
 
     [1] = "Troops",
