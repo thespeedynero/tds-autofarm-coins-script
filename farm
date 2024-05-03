@@ -18,6 +18,15 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 local args = {
+    [1] = "Streaming",
+    [2] = "SelectTower",
+    [3] = "Farm",
+    [4] = "Default"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+local args = {
     [1] = "Troops",
     [2] = "Upgrade",
     [3] = "Set",
