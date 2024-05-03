@@ -11,8 +11,6 @@ while true do
 
         game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
     end
-    
-    if waveText == "WAVE 1" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/0c7260d39076c15dbc1c97556563523d15a26bc5/wave%201"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thespeedynero/tds-autofarm-coins-script/main/farm"))()
     end
