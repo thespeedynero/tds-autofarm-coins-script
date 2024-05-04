@@ -2,35 +2,36 @@ while true do
 local player = game.Players.LocalPlayer
     local playerGui = player.PlayerGui.GameGui.Health
     local waveText = playerGui.Wave.Text
-if waveText == "WAVE 3" then
-local args = {
+print("script in cycle")
+   if waveText == "WAVE 3" then
+local args1 = {
     [1] = "Troops",
     [2] = "Place",
     [3] = "Shotgunner",
     [4] = {
         ["Rotation"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-        ["Position"] = Vector3.new(-1.3321104049682617, 0.9999366998672485, -37.142608642578125)
+        ["Position"] = Vector3.new(-1.3403606414794922, 0.9999390840530396, -37.48078155517578)
     }
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args1))
+local args1 = {
     [1] = "Streaming",
     [2] = "SelectTower",
     [3] = "Shotgunner",
     [4] = "Default"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-local args = {
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args1))
+local args1 = {
     [1] = "Streaming",
     [2] = "SelectTower",
     [3] = "Shotgunner",
     [4] = "Default"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-local args = {
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args1))
+local args1 = {
     [1] = "Troops",
     [2] = "Upgrade",
     [3] = "Set",
@@ -39,8 +40,8 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args1))
+local args1 = {
     [1] = "Troops",
     [2] = "Target",
     [3] = "Set",
@@ -50,6 +51,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
-end
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args1))
+   end
 wait(1)
+end
